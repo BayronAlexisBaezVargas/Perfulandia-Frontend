@@ -1,0 +1,27 @@
+body {
+display: flex;
+min-height: 100vh;
+overflow-x: hidden;
+}
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+}
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+.sidebar .nav-link {
+    color: var(--bs-light);
+}
+.sidebar .nav-link.active {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+.sidebar .nav-link:hover {
+    background-color: #343a40;
+}
+.stat-card {
+    background-color: var(--bs-body-tertiary);
+    border: none;
+}
